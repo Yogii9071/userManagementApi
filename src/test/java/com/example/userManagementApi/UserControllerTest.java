@@ -27,4 +27,12 @@ public class UserControllerTest {
 
     }
 
+        mockMvc.perform(post("/api/users")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(newUsers)))
+                .andExpect(status().isCreated())
+                .andExpect(jsonPath("$",hasSize(2)))
+                .andExpect(jsonPath("$[0].id",notNullValue()))
+                .andExpect(jsonPath("$[0].name",is("Alice Brown")));
+    }
 }
