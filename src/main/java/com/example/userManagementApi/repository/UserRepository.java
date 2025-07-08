@@ -4,6 +4,7 @@ import com.example.userManagementApi.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import javax.swing.text.html.Option;
 import java.util.Optional;
 
 @Repository // Not strictly necessary as JpaRepository already makes it a Spring bean, but good for clarity
@@ -13,6 +14,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
     // Derived query method: Spring Data JPA will automatically generate the SQL query for this method
     // to find a User by their email address.
     Optional<User> findByEmail(String email);
+    Optional <User> deleteById(long id);
 
     // Another example: find users whose name contains a given string (case-insensitive)
     // List<User> findByNameContainingIgnoreCase(String name);
