@@ -28,7 +28,7 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
-
+@Configuration
 public class SecurityConfig {
 
     // Inject your UserDetailsService (e.g., UserDetail class)
