@@ -1,11 +1,11 @@
-package com.example.userManagementApi;
-
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest
-class UserManagementApiApplicationTests {
-
-
-
-}
+//package com.example.userManagementApi;
+//
+//import org.junit.jupiter.api.Test;
+//import org.springframework.boot.test.context.SpringBootTest;
+//
+//@SpringBootTest
+//class UserManagementApiApplicationTests {
+//
+//
+//
+//}
